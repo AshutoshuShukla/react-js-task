@@ -16,7 +16,7 @@ const Users = () => {
   (
 
   <React.Fragment>
-  {/* <h3 style={{ paddingTop:"em",display:'flex',justifyContent:"center"}}>UserList</h3> */}
+  <h3 style={{ paddingTop:"em",display:'flex',justifyContent:"center"}}>UserList</h3>
   <CustomizedTables tableData={UserList} />
   </React.Fragment>
     ):<div/>
