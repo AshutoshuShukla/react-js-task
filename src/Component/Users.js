@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import * as action from '../store/actions/index';
 import CustomizedTables from './CustomizedTables';
+import PagedCheckedTable from './PagedCheckedTable';
 
 const Users = () => {
 
@@ -16,8 +17,9 @@ const Users = () => {
   (
 
   <React.Fragment>
-  {/* <h3 style={{ paddingTop:"em",display:'flex',justifyContent:"center"}}>UserList</h3> */}
-  <CustomizedTables tableData={UserList} />
+  
+  {/* <CustomizedTables tableData={UserList} /> */}
+  <PagedCheckedTable tableData={UserList}/>
   </React.Fragment>
     ):<div/>
 };
